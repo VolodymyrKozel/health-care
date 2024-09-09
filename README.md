@@ -6,7 +6,7 @@ This project is a comprehensive **Medical Appointment Management System** design
 ### Technologies Used
 
 
-- **Next.js** ![Next.js Logo](https://img.icons8.com/ios/50/000000/nextjs.png): Framework for building server-rendered React applications, providing an optimized development experience with features such as static site generation (SSG) and server-side rendering (SSR).
+- **Next.js** [![Nextjs Logo](https://skillicons.dev/icons?i=nextjs)](https://skillicons.dev) : Framework for building server-rendered React applications, providing an optimized development experience with features such as static site generation (SSG) and server-side rendering (SSR).
 
 - **Tailwind CSS** ![Tailwind CSS Logo](https://img.icons8.com/ios/50/000000/tailwindcss.png): A utility-first CSS framework for creating custom designs directly in the markup, allowing for rapid UI development with a set of low-level utility classes.
 
