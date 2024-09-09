@@ -9,7 +9,6 @@ import {
   APPOINTMENT_COLLECTION_ID,
   DATABASE_ID,
   databases,
-  messaging,
 } from "../appwrite.config";
 import { formatDateTime, parseStringify } from "../utils";
 import { CreateAppointmentParams, UpdateAppointmentParams } from "@/types";
@@ -100,7 +99,7 @@ export const getRecentAppointmentList = async () => {
 };
 
 //  SEND SMS NOTIFICATION
-export const sendSMSNotification = async (userId: string, content: string) => {
+/* export const sendSMSNotification = async (userId: string, content: string) => {
   try {
     // https://appwrite.io/docs/references/1.5.x/server-nodejs/messaging#createSms
     const message = await messaging.createSms(
@@ -114,7 +113,7 @@ export const sendSMSNotification = async (userId: string, content: string) => {
     console.error("An error occurred while sending sms:", error);
   }
 };
-
+ */
 //  UPDATE APPOINTMENT
 export const updateAppointment = async ({
   appointmentId,
@@ -143,7 +142,7 @@ export const updateAppointment = async ({
             formatDateTime(appointment.schedule!, timeZone).dateTime
           } is cancelled. Reason:  ${appointment.cancellationReason}`
     }.`;
-    await sendSMSNotification(userId, smsMessage);
+    /*    await sendSMSNotification(userId, smsMessage); */
 
     revalidatePath("/admin");
     return parseStringify(updatedAppointment);

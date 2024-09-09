@@ -1,12 +1,14 @@
 import { Models } from "node-appwrite";
 
+export type Status = "pending" | "scheduled" | "cancelled";
+
 export interface Patient extends Models.Document {
   userId: string;
   name: string;
   email: string;
   phone: string;
   birthDate: Date;
-  gender: Gender;
+  gender: string;
   address: string;
   occupation: string;
   emergencyContactName: string;
