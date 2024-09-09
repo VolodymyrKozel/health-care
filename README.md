@@ -4,8 +4,7 @@ This project is a comprehensive **Medical Appointment Management System** design
 
 
 ### Technologies Used
-
-[![appwrite Logo](https://skillicons.dev/icons?i=appwrite, nextjs, tailwind)](https://skillicons.dev)
+[![Technologies Used](https://skillicons.dev/icons?i=appwrite,nextjs,tailwind)](https://skillicons.dev)
 
 - **Next.js** : Framework for building server-rendered React applications, providing an optimized development experience with features such as static site generation (SSG) and server-side rendering (SSR).
 
