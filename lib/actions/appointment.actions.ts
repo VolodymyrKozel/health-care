@@ -12,6 +12,7 @@ import {
   messaging,
 } from "../appwrite.config";
 import { formatDateTime, parseStringify } from "../utils";
+import { CreateAppointmentParams, UpdateAppointmentParams } from "@/types";
 
 export const createAppointment = async (
   appointment: CreateAppointmentParams
@@ -31,7 +32,6 @@ export const createAppointment = async (
   }
 };
 
-//  GET RECENT APPOINTMENTS
 export const getRecentAppointmentList = async () => {
   try {
     const appointments = await databases.listDocuments(

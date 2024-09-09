@@ -12,7 +12,7 @@ import { Doctors, FormFieldType } from "@/constants";
 import {
   createAppointment,
   updateAppointment,
-} from "@/lib/actions/appointment.actions";
+} from "../../lib/actions/appointment.actions";
 import { getAppointmentSchema } from "@/lib/validation";
 import { Appointment } from "@/types/appwrite.types";
 
@@ -23,7 +23,7 @@ import SubmitButton from "../ui/SubmitButton";
 import { Form } from "../ui/form";
 import { Status } from "@/types";
 
-export const AppointmentForm = ({
+const AppointmentForm = ({
   userId,
   patientId,
   type = "create",
@@ -220,3 +220,5 @@ export const AppointmentForm = ({
     </Form>
   );
 };
+
+export default AppointmentForm;
